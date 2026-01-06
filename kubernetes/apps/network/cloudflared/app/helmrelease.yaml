@@ -45,7 +45,7 @@ spec:
               TUNNEL_TRANSPORT_PROTOCOL: quic
             envFrom:
               - secretRef:
-                  name: cloudflared-secret
+                  name: cloudflare-tunnel-secret
             probes:
               liveness: &probes
                 enabled: true
